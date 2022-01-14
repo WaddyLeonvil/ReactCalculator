@@ -1,0 +1,59 @@
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty {
+    background-color: #e1e0ef;
+}
+
+.number:active, .operator:active {
+    /* font-size: 13px; */
+    background-color: #1100ff;
+    color: white;
+    transition: 150ms;
+}
+
+.number:focus, .operator:focus, .empty:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: #ffa500;
+}
+
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: #f08080;
+}
+
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: #9477af;
+}
+
+@media screen and (max-width: 960px) {
+    #calc {
+        top: 13vh;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+    }
+}
