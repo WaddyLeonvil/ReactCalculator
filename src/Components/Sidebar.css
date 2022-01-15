@@ -31,9 +31,12 @@
     padding: 24px 0px;
     display: inline-block;
     background-color: #4345be;
+    color: white;
+    font-size: 24px;
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .nav-item:hover {
@@ -59,9 +62,15 @@ img {
     }
     .topbar {
         width: 100vw;
+        left: 0px;
     }
 
     img {
-        left: 20px;
+        right: 20px;
+    }
+
+    .nav-item {
+        width: 100vw;
+        left: 0px;
     }
 }

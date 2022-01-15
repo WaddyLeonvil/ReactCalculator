@@ -10,7 +10,6 @@ export function Sidebar() {
         setMenu(!menu);
     }
 
-
     return (
         <div className={menu ? "sidebar" : "sidebar hidden"}>
             <div className="topbar">
@@ -46,4 +45,3 @@ export function Sidebar() {
         </div>
     )
 }
-
