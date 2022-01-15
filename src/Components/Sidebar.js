@@ -17,28 +17,32 @@ export function Sidebar() {
                 <img src={menuBars} alt="" onClick={handleClick}/>
                 WME Calculator
             </div>
-            <ul className="nav-menu">
-                <li className="nav-item">
-                    <Link to='/' className='nav-links'>
-                        4-function Calc
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='/trig' className='nav-links'>
-                        Trigonometry
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='/calc' className='nav-links'>
-                        Calculus
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='/stats' className='nav-links'>
-                        Statistics
-                    </Link>
-                </li>
-            </ul>
+            
+            <Link to='/' className='nav-links'>
+                <div className="nav-item">
+                    4-function Calc
+                </div>
+            </Link>
+            <Link to='/trig' className='nav-links'>
+                <div className="nav-item">
+                    Trigonometry
+                </div>
+            </Link>
+            <Link to='/calc' className='nav-links'>
+                <div className="nav-item">
+                    Calculus
+                </div>
+            </Link>
+            <Link to='/stats' className='nav-links'>
+                <div className="nav-item">
+                    Statistics
+                </div>
+            </Link>
+            <Link to='/convert' className='nav-links'>
+                <div className="nav-item">
+                    Unit Conversion
+                </div>
+            </Link>
         </div>
     )
 }
