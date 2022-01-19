@@ -74,3 +74,21 @@ img {
         left: 0px;
     }
 }
+
+/* 
+ ---- Sidebar fade-in animation ----
+
+@media screen and (min-width: 961px) {
+    .sidebar {
+        animation: fadeIn 2s;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */

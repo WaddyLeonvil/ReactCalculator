@@ -1,8 +1,13 @@
 #trig-container {
     margin: auto;
-    width: 700px;
+    width: 500px;
     height: 70vh;
     background-color: #474379;
     border: 2px solid black;
+    color: white;
+    border-radius: 1em;
+}
+
+input {
     border-radius: 1em;
 }
