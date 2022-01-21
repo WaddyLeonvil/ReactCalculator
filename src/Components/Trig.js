@@ -14,7 +14,7 @@ export function Trig() {
         <div id='trig-container'>
             <p>Trig Container</p>
             <label htmlFor="degree">Degrees: </label>
-            <input type="text" value={degrees} name='degree' pattern='[0-9]' onChange={handleChange} />
+            <input type="text" value={degrees} name='degree' autocomplete='off' onChange={handleChange} />
             <p>{degrees}</p>
 
 
