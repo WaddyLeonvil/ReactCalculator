@@ -9,5 +9,10 @@
 }
 
 input {
-    border-radius: 1em;
+    border-radius: 0.25em;
+    border: 1px solid #7b6df8;
+}
+
+input:focus {
+    outline: none;
 }
