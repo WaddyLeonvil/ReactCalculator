@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import 'mathjs';
 import './Trig.css';
-import {cos, sin, tan, unit} from 'mathjs';
+import {cos, csc, sec, sin, tan, unit} from 'mathjs';
 
 export function Trig() {
     const [degrees, setDegrees] = useState("0");
@@ -22,22 +22,34 @@ export function Trig() {
             <br/>
             <div className="trig-values">
                 <div className="trig-value-row">
-                    <label htmlFor="degree">Degrees: </label>
+                    <div className="value-left" id='degrees'>Degrees</div>
                     <input type="text" value={degrees} name='degree' autocomplete='off' onChange={handleChange} />
                 </div>
                 <div className="trig-value-row">
-                    <p>Sine: {Math.round((sin(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</p>
+                    <div className="value-left">Sine</div>
+                    <div className="value-right">{Math.round((sin(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</div>
                 </div>
                 <div className="trig-value-row">
-                    <p>Cosine: {Math.round((cos(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</p>
+                    <div className='value-left'>Cosine</div>
+                    <div className="value-right">{Math.round((cos(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</div>
+                </div>
+                <div className="trig-value-row">
+                    <div className='value-left'>Tangent</div>
+                    <div className="value-right">{(degrees === '90' || degrees === '270') ? 'Undefined' : Math.round((tan(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</div>
+                </div>
+                <div className="trig-value-row">
+                    <div className="value-left">Cosecant</div>
+                    <div className="value-right">{Math.round((csc(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</div>
+                </div>
+                <div className="trig-value-row">
+                    <div className="value-left">Secant</div>
+                    <div className="value-right">{Math.round((sec(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</div>
+                </div>
+                <div className="trig-value-row">
+                    <div className='value-left'>Cotangent</div>
+                    <div className="value-right">{(degrees === '0' || degrees === '90' || degrees === '180' || degrees === '270') ? 'Undefined' : Math.round((tan(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</div>
                 </div>
             </div>
-            
-            
-            
-            <p>Tangent: {(degrees === '90' || degrees === '270') ? 'Undefined' : Math.round((tan(unit(parseInt(degrees), 'deg')) + Number.EPSILON) * 1000) / 1000}</p>
-
-
         </div>
     )
 }

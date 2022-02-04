@@ -19,7 +19,7 @@ export function Sidebar() {
             
             <Link to='/' className='nav-links'>
                 <div className="nav-item">
-                    4-function Calc
+                    4-function Calculator
                 </div>
             </Link>
             <Link to='/trig' className='nav-links'>

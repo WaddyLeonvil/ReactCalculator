@@ -1,4 +1,5 @@
 #trig-container {
+    position: relative;
     margin: auto;
     width: 500px;
     height: 70vh;
@@ -8,11 +9,33 @@
     border-radius: 1em;
 }
 
+.trig-value-row {
+    position: relative;
+    background-color: rgb(255, 252, 248);
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    height: 35px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 input {
     border-radius: 0.25em;
-    border: 1px solid #7b6df8;
+    text-align: right;
+    border: none;
+    font: inherit;
 }
 
 input:focus {
     outline: none;
+}
+
+#degrees {
+    text-decoration: dotted;
 }
