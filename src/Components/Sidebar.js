@@ -27,7 +27,7 @@ export function Sidebar() {
                     Trigonometry
                 </div>
             </Link>
-            <Link to='/calc' className='nav-links'>
+            {/* <Link to='/calc' className='nav-links'>
                 <div className="nav-item">
                     Calculus
                 </div>
@@ -41,7 +41,7 @@ export function Sidebar() {
                 <div className="nav-item">
                     Unit Conversion
                 </div>
-            </Link>
+            </Link> */}
         </div>
     )
 }
