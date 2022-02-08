@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using React to implement multiple mathematical functions such as a 4-function calculator, as well as access to trigonometry functions.
 
 ## Available Scripts
 
