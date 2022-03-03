@@ -32,6 +32,8 @@
     display: inline-block;
     background-color: #4345be;
     color: white;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
     font-size: 24px;
     justify-content: center;
     align-items: center;
