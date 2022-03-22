@@ -2,7 +2,7 @@ import {useState} from 'react';
 import Buttons from './Button';
 import "./Calculator.css";
 
-const classes = ["operator", "operator", "operator", "operator", "number", "number", "number", "operator", "number", "number", "number", "operator", "number", "number", "number", "operator", "empty", "number", "empty", "operator"];
+const classes = ["operator", "operator", "operator", "operator", "number", "number", "number", "operator", "number", "number", "number", "operator", "number", "number", "number", "operator", "empty", "number", "operator", "operator"];
 const ids = ["clear", "backspace", "plumin", "/", "7", "8", "9", "*", "4", "5", "6", "-", "1", "2", "3", "+", "paren", "0", "decimal", "="];
 const values = ["C", "CE", "±", "÷", "7", "8", "9", "×", "4", "5", "6", "-", "1", "2", "3", "+", "", "0", ".", "="];
 
@@ -26,6 +26,11 @@ export function Calculator() {
                 }
             });
         }
+        else if (value === ".") {
+            setOutput((prev) => {
+                return prev + ".";
+            })
+        }
         else if (className === "operator" && id !== "plumin") {
             if (output === "0" && history !== "") {
                 return;
@@ -38,8 +43,10 @@ export function Calculator() {
                     setHistory("");
                 }
                 else {
-                    setHistory((prev) => prev + output + id);
-                    setOutput("0");
+                    if (output.substring(output.length - 1, output.length) !== ".") {
+                        setHistory((prev) => prev + output + id);
+                        setOutput("0");
+                    }
                 }
             }
         }

@@ -10,7 +10,7 @@ button {
     font-size: 15px;
 }
 
-button:active {
+button:active:not(.empty) {
     background-color: #ffd700;
     color: #1b1b1b;
     transition: 150ms;
