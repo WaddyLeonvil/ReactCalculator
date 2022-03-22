@@ -8,39 +8,13 @@
 
 #calc {
     width: 320px;
-    height: 520px;
+    height: auto;
     margin: 0 auto;
     top: 8vh;
     position: relative;
     border-radius: 1em;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 255, 0.2), 0 10px 24px 0 rgba(0, 0, 255, 0.19);
-}
-
-#result:hover {
-    background-color: lightblue;
-    transition: 0.25s;
-}
-
-#result {
-    height: 120px;
-    background-color: #ccc9f3;
-    border-radius: 1em 1em 0px 0px;
-}
-
-#history {
-    text-align: right;
-    height: 20px;
-    margin: 0 20px;
-    padding-top: 20px;
-    font-size: 15px;
-    color: #727272;
-}
-
-#output {
-    text-align: right;
-    height: 60px;
-    margin: 10px 20px;
-    font-size: 30px;
+    /* box-shadow: 0 8px 12px 0 rgba(0, 0, 255, 0.2), 0 10px 24px 0 rgba(0, 0, 255, 0.19); */
+    
 }
 
 #keys {
@@ -52,57 +26,37 @@
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
-    background-color: #e1e0ef;
+    background-color: #1b1b1b;
     border-radius: 0 0 1em 1em;
+    border: 3px solid #a1a1a1;
 }
 
-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border-width: 0;
-    font-weight: bold;
+#result {
+    height: 120px;
+    background-color: #1b1b1b;
+    border-radius: 1em 1em 0px 0px;
+    border: 3px solid #a1a1a1;
+    border-bottom: none;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
     font-size: 15px;
+    color: #b3b3b3;
 }
 
-.number, .empty {
-    background-color: #e1e0ef;
-}
-
-button:active {
-    background-color: #1100ff;
+#output {
     color: white;
-    transition: 150ms;
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
 }
 
-.number:focus, .operator:focus, .empty:focus {
-    outline: 0;
-}
 
-/* button:nth-child(4) {
-    font-size: 20px;
-    background-color: #20b2aa;
-}
-
-button:nth-child(8) {
-    font-size: 20px;
-    background-color: #ffa500;
-}
-
-button:nth-child(12) {
-    font-size: 20px;
-    background-color: #f08080;
-} */
-
-button:nth-child(4), button:nth-child(8), button:nth-child(12), button:nth-child(16), button:nth-child(20) {
-    font-size: 20px;
-    background-color: #7d93e0;
-}
-
-/* button:nth-child(20) {
-    font-size: 20px;
-    background-color: #9477af;
-} */
 
 @media screen and (max-width: 960px) {
     #calc {
